@@ -1,0 +1,26 @@
+{
+    "name": "lasca",
+    "displayName": "Lasca Language Syntax Highlighting",
+    "description": "Lasca Language Syntax Highlighting",
+    "version": "0.0.1",
+    "publisher": "lasca-lang",
+    "engines": {
+        "vscode": "^1.25.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "lasca",
+            "aliases": ["Lasca", "lasca"],
+            "extensions": [".lasca"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "lasca",
+            "scopeName": "source.lasca",
+            "path": "./syntaxes/lasca.tmLanguage.json"
+        }]
+    }
+}
