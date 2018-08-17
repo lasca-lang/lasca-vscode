@@ -1,26 +1,40 @@
 {
-    "name": "lasca",
-    "displayName": "Lasca Language Syntax Highlighting",
-    "description": "Lasca Language Syntax Highlighting",
-    "version": "0.0.1",
-    "publisher": "lasca-lang",
-    "engines": {
-        "vscode": "^1.25.0"
-    },
-    "categories": [
-        "Programming Languages"
-    ],
-    "contributes": {
-        "languages": [{
-            "id": "lasca",
-            "aliases": ["Lasca", "lasca"],
-            "extensions": [".lasca"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "lasca",
-            "scopeName": "source.lasca",
-            "path": "./syntaxes/lasca.tmLanguage.json"
-        }]
-    }
+	"name": "lasca",
+	"displayName": "Lasca Language Syntax Highlighting",
+	"description": "Lasca Language Syntax Highlighting",
+	"version": "0.0.1",
+	"publisher": "lasca-lang",
+	"engines": {
+		"vscode": "^1.25.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "lasca",
+				"aliases": [
+					"Lasca",
+					"lasca"
+				],
+				"extensions": [
+					".lasca"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "lasca",
+				"scopeName": "source.lasca",
+				"path": "./syntaxes/lasca.tmLanguage.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "4faa9425-25a3-4642-b801-90b54519bc6c",
+		"publisherDisplayName": "lasca-lang",
+		"publisherId": "efd0157f-9971-41b1-b09d-e6d771e0588e"
+	}
 }

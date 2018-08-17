@@ -12,15 +12,35 @@
 			"include": "#number"
 		},
 		{
+			"include": "#comments"
+		},
+		{
 			"include": "#strings"
 		}
 	],
 	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.lasca",
+					"match": "(--).*$\n?"
+				},
+				{
+					"name": "comment.block.lasca",
+					"begin": "{-",
+					"end": "-}"
+				}
+			]
+		},
 		"keywords": {
 			"patterns": [
 				{
 					"name": "keyword.control.lasca",
-					"match": "\\b(def|data|import|if|then|else|match|module|extern|let|in|do)\\b"
+					"match": "\\b(def|data|import|if|then|else|match|module|extern|let|in|do|var)\\b"
+				},
+				{
+					"name": "keyword.other.lasca",
+					"match": "\\b(and|or|not)\\b"
 				}
 			]
 		},
